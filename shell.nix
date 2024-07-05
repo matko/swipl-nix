@@ -5,5 +5,6 @@ mkShell {
     (python311.withPackages (py: [
       py.pygithub
     ]))
+    python311Packages.python-lsp-server
   ];
 }
