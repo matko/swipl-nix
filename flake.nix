@@ -13,5 +13,11 @@
       packages = builtins.mapAttrs (system: _:
         mkPackages {pkgs=nixpkgs.legacyPackages.${system};}
       ) flake-utils.lib.system;
+
+      devShells = builtins.mapAttrs (system: _:
+        {
+          default = import ./shell.nix {pkgs=nixpkgs.legacyPackages.${system};};
+        }
+      ) flake-utils.lib.system;
   };
 }

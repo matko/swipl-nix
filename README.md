@@ -55,7 +55,18 @@ installed as soon as possible,
 [swivm](https://github.com/fnogatz/swivm) is probably the quicker and
 easier option for you.
 
-As a non-nix user you might be wondering why you'd use this project at all. 
+As a non-nix user you might be wondering why you'd use this project at all.
+
+## Minimum version
+Currently, only versions from 8.4.0 upwards are supported. This is the
+earliest version that builds cleanly with the unmodified package
+definition in nixpkgs.
+
+I would like to support older versions, but this will require
+modifying the package definition to fix the build for older
+versions. Specifically, it appears that openssl's `RSA_SSLV23_PADDING`
+macro was removed in newer versions of openssl, and older swipl
+versions depend on it.
 
 ## Structure
 This project is usable as a flake or as an overlay.
@@ -93,3 +104,13 @@ Since the swipl repository makes heavy use of submodules, and doing a
 fresh clone for every single version is prohibitively expensive, the
 automation additionally ensures that all these repositories are
 fetched only once.
+
+All this automation can be run as follows:
+```
+nix develop .
+./refresh.sh
+```
+
+If you are using direnv, the development environment will activate
+automatically when entering the directory, and you won't have to do
+`nix develop .` manually.

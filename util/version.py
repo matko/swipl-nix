@@ -19,7 +19,7 @@ class Version:
         return Version(m)
 
     def is_supported(self):
-        return self >= Version.parse('V7.7.20')
+        return self >= Version.parse('V8.4.0')
 
 
     @property
