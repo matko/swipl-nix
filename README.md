@@ -12,7 +12,7 @@ Commands below assume a Nix install with flakes enabled. Instructions
 for this can be found on the [https://nixos.wiki/wiki/Flakes](NixOS
 wiki).
 
-Run the latest stable:
+### Run the latest stable
 ```
 nix run github:matko/swipl-nix
 ```
@@ -21,32 +21,32 @@ or more explicitely,
 nix run github:matko/swipl-nix#latest
 ```
 
-Run the latest devel:
+### Run the latest devel
 ```
 nix run github:matko/swipl-nix#latest-devel
 ```
 
-Run a specific version:
+### Run a specific version
 ```
 nix run github:matko/swipl-nix#9_2_3
 ```
-
-Run a non-specific version
 ```
 nix run github:matko/swipl-nix#9_2
 ```
-This will run the newest version that starts with `9.2.`.
-
 ```
 nix run github:matko/swipl-nix#9
 ```
-This will run the newest stable version that starts with `9.`.
-
 ```
 nix run github:matko/swipl-nix#9-devel
 ```
-This will run the newest development version that starts with `9.`.
 
+Versions can be specified either completely (`9_2_3` above) or
+incompletely, in which case the most recent version with that prefix
+is used.
+
+When only a major version is specified, the version is completed to
+the most recent stable version with that prefix. If the latest devel
+version is required instead, add `-devel` at the end.
 
 ## Alternative: swivm
 swipl-nix requires you to first install Nix, after which Nix does most
