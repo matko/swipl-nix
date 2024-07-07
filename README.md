@@ -24,6 +24,10 @@ nix run github:matko/swipl-nix#latest
 ```
 nix run github:matko/swipl-nix#latest-devel
 ```
+or
+```
+nix run github:matko/swipl-nix#devel
+```
 
 ### Run a specific version
 ```

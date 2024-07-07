@@ -21,4 +21,7 @@ let lib = pkgs.lib;
         derivations.${builtins.replaceStrings ["."] ["_"] full_version}
     ) aliases;
 in
-derivations // aliasedDerivations // { default = aliasedDerivations.latest; }
+derivations // aliasedDerivations // {
+  default = aliasedDerivations.latest;
+  devel = aliasedDerivations.latest-devel;
+}
