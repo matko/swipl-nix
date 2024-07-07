@@ -9,8 +9,7 @@ depend on specific versions of swipl easily.
 
 ## Basic usage
 Commands below assume a Nix install with flakes enabled. Instructions
-for this can be found on the [https://nixos.wiki/wiki/Flakes](NixOS
-wiki).
+for this can be found on the [NixOS wiki](https://nixos.wiki/wiki/Flakes).
 
 ### Run the latest stable
 ```
@@ -53,7 +52,7 @@ swipl-nix requires you to first install Nix, after which Nix does most
 of the heavy lifting for version management. If you are not already a
 Nix/NixOS user and your goal is just to get a specific swipl version
 installed as soon as possible,
-[https://github.com/fnogatz/swivm](swivm) is probably the quicker and
+[swivm](https://github.com/fnogatz/swivm) is probably the quicker and
 easier option for you.
 
 As a non-nix user you might be wondering why you'd use this project at all. 
@@ -75,7 +74,7 @@ This project can also be used without flakes. `overlay.nix` defines an
 overlay which can be used with nixpkgs to get a package set under
 `swipl-nix`. For example, to get version 8.0.3, you'd do `pkgs.swipl-nix."8_0_3"`.
 
-For more information on overlays, consult the [https://nixos.wiki/wiki/Overlays][NixOS wiki].
+For more information on overlays, consult the [NixOS wiki](https://nixos.wiki/wiki/Overlays).
 
 ## Project internals
 For any external source (in our case, SWI-Prolog and its modules), nix
