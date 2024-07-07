@@ -14,21 +14,21 @@ wiki).
 
 Run the latest stable:
 ```
-nix run github:terminusdb-labs/swipl-nix
+nix run github:matko/swipl-nix
 ```
 or more explicitely,
 ```
-nix run github:terminusdb-labs/swipl-nix#stable
+nix run github:matko/swipl-nix#latest
 ```
 
 Run the latest devel:
 ```
-nix run github:terminusdb-labs/swipl-nix#devel
+nix run github:matko/swipl-nix#latest-devel
 ```
 
 Run a specific version:
 ```
-nix run github:terminusdb-labs/swipl-nix#9.2.3
+nix run github:matko/swipl-nix#9_2_3
 ```
 
 ## Alternative: swivm
@@ -54,9 +54,9 @@ Additionally, this flake provides an overlay under the
 described below.
 
 ### Overlay
-This project can also be used without flakes. `default.nix` defines an
+This project can also be used without flakes. `overlay.nix` defines an
 overlay which can be used with nixpkgs to get a package set under
-`swipl-nix`. For example, to get version 8.0.3, you'd do `pkgs.swipl-nix."8.0.3"`.
+`swipl-nix`. For example, to get version 8.0.3, you'd do `pkgs.swipl-nix."8_0_3"`.
 
 For more information on overlays, consult the [https://nixos.wiki/wiki/Overlays][NixOS wiki].
 
