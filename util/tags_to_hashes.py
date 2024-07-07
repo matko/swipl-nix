@@ -23,7 +23,6 @@ def versions_to_hashes(checkout_dir, repo_name, versions):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='calculate hashes for a set of tags')
     parser.add_argument('checkout_dir')
-    parser.add_argument('--repo', choices=['devel', 'release'], required=False, default='release')
 
     args = parser.parse_args()
     stable_ts = tags(args.checkout_dir, 'release')
