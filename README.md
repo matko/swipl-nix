@@ -31,6 +31,23 @@ Run a specific version:
 nix run github:matko/swipl-nix#9_2_3
 ```
 
+Run a non-specific version
+```
+nix run github:matko/swipl-nix#9_2
+```
+This will run the newest version that starts with `9.2.`.
+
+```
+nix run github:matko/swipl-nix#9
+```
+This will run the newest stable version that starts with `9.`.
+
+```
+nix run github:matko/swipl-nix#9-devel
+```
+This will run the newest development version that starts with `9.`.
+
+
 ## Alternative: swivm
 swipl-nix requires you to first install Nix, after which Nix does most
 of the heavy lifting for version management. If you are not already a
