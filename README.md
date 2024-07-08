@@ -59,7 +59,21 @@ installed as soon as possible,
 [swivm](https://github.com/fnogatz/swivm) is probably the quicker and
 easier option for you.
 
-As a non-nix user you might be wondering why you'd use this project at all.
+## So why Nix?
+As a non-Nix user you might be wondering why you'd use this project at
+all. The real advantage comes into play when you need to build code
+that depends on a specific verison of swipl, maybe even a version that
+carries some custom patches. It can be a pain to ensure that this
+version is the one in scope for a particular project that needs it. It
+becomes even more of a pain when you need different versions of swipl
+for different projects. If you use any sort of third-party native
+libraries, your chances of things just working on different versions
+of SWI-Prolog become pretty bleak.
+
+Nix solves this sort of problem by allowing the construction of build
+and runtime environments that are specific to projects. It allows you
+to write prolog and native code in an environment which will be the
+same regardless of what machine it is on.
 
 ## Minimum version
 Currently, only versions from 8.4.0 upwards are supported. This is the
