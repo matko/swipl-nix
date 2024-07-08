@@ -127,7 +127,8 @@ fresh clone for every single version is prohibitively expensive, the
 automation additionally ensures that all these repositories are
 fetched only once.
 
-All this automation can be run as follows:
+### refreshing the package set
+To refresh the exposed package set, do the following:
 ```
 nix develop .
 ./refresh.sh
@@ -136,3 +137,27 @@ nix develop .
 If you are using direnv, the development environment will activate
 automatically when entering the directory, and you won't have to do
 `nix develop .` manually.
+
+`refresh.sh` is a simple script which does the following:
+1. check out all relevant SWI-Prolog packages in a temporary directory.
+2. create `tags.json` with the computed hashes for each version tag
+3. create `alias.json` with aliases for each incomplete version
+4. delete the temporary directory
+
+You are then supposed to check in the two generated json files.
+
+### nix package set generation
+Both `flake.nix` and `overlay.nix` make use of `mkPackages` to
+generate a package set.
+
+`mkPackages.nix` parses `tags.json` and `alias.json` to generate a
+package set. For the actual derivations, `package.nix` uses the
+version of swi-prolog provided by nixpkgs, but overrides the version
+and source appropriately.
+
+Since the generated package set simply exposes slightly modified
+nixpkgs swi-prolog derivations, you can use the same overrides with
+these as you could with the version provided by nixpkgs. You could
+also use an overlay to replace swi-prolog with a specific version
+throughout nixpkgs, or override the version used in specific
+derivations.
