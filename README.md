@@ -11,6 +11,10 @@ depend on specific versions of swipl easily.
 Commands below assume a Nix install with flakes enabled. Instructions
 for this can be found on the [NixOS wiki](https://nixos.wiki/wiki/Flakes).
 
+None of these commands require that you clone this repository. In
+fact, there should never be a need to do so manually, unless you want
+to contribute to the way things are packaged here.
+
 ### Run the latest stable
 ```
 nix run github:matko/swipl-nix
@@ -62,7 +66,7 @@ easier option for you.
 ## So why Nix?
 As a non-Nix user you might be wondering why you'd use this project at
 all. The real advantage comes into play when you need to build code
-that depends on a specific verison of swipl, maybe even a version that
+that depends on a specific version of swipl, maybe even a version that
 carries some custom patches. It can be a pain to ensure that this
 version is the one in scope for a particular project that needs it. It
 becomes even more of a pain when you need different versions of swipl
