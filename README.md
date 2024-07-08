@@ -87,7 +87,7 @@ described below.
 ### Overlay
 This project can also be used without flakes. `overlay.nix` defines an
 overlay which can be used with nixpkgs to get a package set under
-`swipl-nix`. For example, to get version 8.0.3, you'd do `pkgs.swipl-nix."8_0_3"`.
+`swipl-nix`. For example, to get version 8.5.3, you'd use `pkgs.swipl-nix."8_5_3"`.
 
 For more information on overlays, consult the [NixOS wiki](https://nixos.wiki/wiki/Overlays).
 
