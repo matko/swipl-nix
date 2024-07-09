@@ -11,6 +11,11 @@ let lib = pkgs.lib;
         (pkgs.callPackage package {
           inherit version;
           inherit (tag) repo rev hash;
+
+          # temporary import from a version copied from nixpkgs
+          swiProlog = pkgs.callPackage ./swi-prolog {
+            inherit (pkgs.darwin.apple_sdk.frameworks) Security;
+          };
         })
     ) tags;
 
