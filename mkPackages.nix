@@ -1,5 +1,7 @@
 {
-  pkgs ? import <nixpkgs> {}
+  pkgs ? import <nixpkgs> {},
+  swiProlog ? pkgs.swiProlog,
+  fetchFromGitHub ? pkgs.fetchFromGitHub
 }:
 let lib = pkgs.lib;
     package = import ./package.nix;
@@ -8,7 +10,9 @@ let lib = pkgs.lib;
     derivations = lib.attrsets.mapAttrs' (version: tag:
       lib.attrsets.nameValuePair
         (builtins.replaceStrings ["."] ["_"] version)
-        (pkgs.callPackage package {
+        (package {
+          inherit swiProlog fetchFromGitHub;
+
           inherit version;
           inherit (tag) repo rev hash;
         })
