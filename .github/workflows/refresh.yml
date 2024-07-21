@@ -5,6 +5,8 @@ on:
   repository_dispatch:
     types: [update_trigger]
   workflow_dispatch:
+  schedule:
+    - cron: '23 4 * * *'
 
 jobs:
   update-files:
