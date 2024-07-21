@@ -1,6 +1,7 @@
 name: Auto Update Files
 
 on:
+  push:
   repository_dispatch:
     types: [update_trigger]
   workflow_dispatch:
