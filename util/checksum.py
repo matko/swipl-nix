@@ -44,17 +44,24 @@ def resolve_rev(checkout_dir, repo_alias, rev):
 
     return commit.hexsha
 
-def rev_to_hash_info(checkout_dir, repo_alias, rev, revname=None):
-    print(f'about to retrieve hash for {revname or rev}', file=sys.stderr)
-    c = checksum(checkout_dir, repo_alias, rev)
-    v = reported_version(checkout_dir, repo_alias, rev)
+def rev_to_hash_info(checkout_dir, repo_alias, rev, revname, old_map):
+    resolved_rev = resolve_rev(checkout_dir, repo_alias, rev)
+    if old_map and revname in old_map and old_map[revname]['rev'] == resolved_rev:
+        print(f'reusing old hash for {revname}', file=sys.stderr)
+        hash = old_map[revname]["hash"]
+        v = old_map[revname]["version"]
+    else:
+        print(f'retrieving hash for {revname}', file=sys.stderr)
+        hash = checksum(checkout_dir, repo_alias, rev)
+        print(f'done retrieving hash for {revname}', file=sys.stderr)
+        v = reported_version(checkout_dir, repo_alias, rev)
+
     repo_name = resolve.repo_alias_to_short_name(repo_alias)
-    print(f'done retrieving hash for {revname or rev}', file=sys.stderr)
     return {
         "repo": repo_name,
-        "rev": resolve_rev(checkout_dir, repo_alias, rev),
+        "rev": resolved_rev,
         "version": v,
-        "hash": c,
+        "hash": hash,
     }
 
 
