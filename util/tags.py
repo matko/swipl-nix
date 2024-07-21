@@ -3,6 +3,7 @@ import os
 import git
 import json
 import argparse
+import sys
 
 import resolve
 from version import Version
@@ -40,7 +41,8 @@ class Branch:
 def branches(checkout_dir, repo_name):
     repo_path = resolve.repo_alias_to_path(checkout_dir, repo_name)
     repo = git.Repo(repo_path)
-    result = list(map(lambda b: Branch(b.name, b.commit.hexsha), repo.branches))
+    remote = repo.remotes.origin
+    result = list(map(lambda b: Branch(b.name[len('origin/'):], b.commit.hexsha), remote.refs))
 
     return result
 

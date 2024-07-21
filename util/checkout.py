@@ -20,19 +20,22 @@ def ensure_repo(repo_url, repos_path):
     repo_name = os.path.basename(repo_url)
     destination = os.path.join(repos_path, repo_name)
 
+    repo = None
     if os.path.exists(destination):
         print(f'{repo_name} already exists. refreshing..')
         repo = git.Repo(destination)
-        # let's make sure we can fetch by just shotgunning in the
-        # relevant config every time. Yes, this is silly.
-        with repo.config_writer() as config:
-            config.set_value('remote "origin"', 'fetch', '+refs/heads/*:refs/heads/*')
-            config.set_value('remote "origin"', 'fetch', '+refs/tags/*:refs/tags/*')
-
-        repo.remote().fetch(tags=True)
     else:
         print(f'cloning {repo_name}..')
-        git.Repo.clone_from(repo_url, destination, bare=True)
+        repo = git.Repo.clone_from(repo_url, destination, bare=True)
+
+    # always fetch regardless
+    # let's make sure we can fetch by just shotgunning in the
+    # relevant config every time. Yes, this is silly.
+    with repo.config_writer() as config:
+        config.set_value('remote "origin"', 'fetch', '+refs/heads/*:refs/remotes/origin/*')
+        #config.set_value('remote "origin"', 'fetch', '+refs/tags/*:refs/tags/*')
+
+    repo.remotes.origin.fetch(tags=True, prune=True)
 
 def checkout(gh, dir='repos'):
     os.makedirs(dir, exist_ok=True)
