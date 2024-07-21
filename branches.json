@@ -1,0 +1,56 @@
+{
+  "64-bits": {
+    "repo": "swipl-devel",
+    "rev": "58861c01f0e509bb19670bc7d1b66ae872fc5156",
+    "version": "9.3.3",
+    "hash": "sha256-Vxso1HtGYMkU03za7EaVtyVcyE4oPseaIi7t1aj5KvU="
+  },
+  "abs-data": {
+    "repo": "swipl-devel",
+    "rev": "0da7f39e768a9d294e4dbffb9b6c24f8c1c00f07",
+    "version": "9.3.3",
+    "hash": "sha256-PEZ1E7l6TZncv4fcFznYqV55vh2vstTZiYuzZ2Xxcwo="
+  },
+  "applink": {
+    "repo": "swipl-devel",
+    "rev": "3f91258088808339d1f2c273933fa9b9c3ae30a3",
+    "version": "9.1.18",
+    "hash": "sha256-C9jOClYH8SBGB2BlKWP+GfmmvzFhWye1CsPUsOiAW/Q="
+  },
+  "conan-profiles": {
+    "repo": "swipl-devel",
+    "rev": "e8a6d4208c24a41f12b7a1b10011e371668a7ad1",
+    "version": "8.5.10",
+    "hash": "sha256-JzgeNx5NHAmsl0rYwwZl6aBUvFlicm0/MlaoHmRPHVY="
+  },
+  "emacs-support": {
+    "repo": "swipl-devel",
+    "rev": "62ef49573093672a45a5697adeaa5bbd86df3d77",
+    "version": "8.5.18",
+    "hash": "sha256-uoCmzVkXxx3KS4NZ6kvpo9y/VUmyGmLieGR+TAchCIo="
+  },
+  "master": {
+    "repo": "swipl-devel",
+    "rev": "c8ecc148d4b210c14af4ba203b280d85f4968af0",
+    "version": "9.3.8",
+    "hash": "sha256-ODJhfloILkdrvOR1vljhXICE2WVKksGTroNUwfYpWV0="
+  },
+  "quoted-char-escapes": {
+    "repo": "swipl-devel",
+    "rev": "f2fe9a6f32bd996f41745f299779935822344a97",
+    "version": "9.1.6",
+    "hash": "sha256-UzfjEStakUVUkYg/Dz74fXslNuup7rDAieMoR8y1DsI="
+  },
+  "rename-elisp-package-sweep-to-sweeprolog": {
+    "repo": "swipl-devel",
+    "rev": "7167967475f8445bc8e3f8a5652c6dc78804c9fb",
+    "version": "8.5.17",
+    "hash": "sha256-bWss6XerXEfWFu8PrXqfVr9BYtUsqgpdxJSX0lzEr/g="
+  },
+  "scratch/wasm-doc": {
+    "repo": "swipl-devel",
+    "rev": "9430a8be0d8f9bc0912238d46767dbf429ef7a9e",
+    "version": "9.1.4",
+    "hash": "sha256-UbOwny/8YVxEIVYOH3hngw2OhzvF6PcUC4V6gQmjuLY="
+  }
+}

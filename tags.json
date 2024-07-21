@@ -1,342 +1,410 @@
 {
-  "8.5.0": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.0",
-    "hash": "sha256-AhQuKcUIcPhQ8yzbh2O00sPW29eSUNO9FHnR5/r8iss="
-  },
-  "8.5.1": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.1",
-    "hash": "sha256-29ZsXt4lRI7qK20wJekr+K0g7o7VQzxryPEhcm1E8Bo="
-  },
-  "8.5.2": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.2",
-    "hash": "sha256-1SSdq+SoSmRkK+GX0LpG2Pi1kozWE9OWDJMpJHUTEko="
-  },
-  "8.5.3": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.3",
-    "hash": "sha256-AnXJo7M6paaRgONf8Tns1xH6Kr4HNb96oWEbBRLU+Eg="
-  },
-  "8.5.4": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.4",
-    "hash": "sha256-c0M10lWgYGxOE09otGXvv97GjlNEGlN1UrS+1yjLtqQ="
-  },
-  "8.5.5": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.5",
-    "hash": "sha256-WR4l6MspKGGnebLCID8YQH0qmWXSz3d5MIojQuL+cu4="
-  },
-  "8.5.6": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.6",
-    "hash": "sha256-ZyIsnf5Vm44gz1JuxL0Fw/JeCLhnPkeCIalgpu5h8HI="
-  },
-  "8.5.7": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.7",
-    "hash": "sha256-nTRU/Clr0YPRVZA97FaFEaTNmRYy5wxRcHiVQ7ydjl0="
-  },
-  "8.5.8": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.8",
-    "hash": "sha256-KY/yMkcV2H6Fcp4rApQg+uYvmZng67SESe2F2XQMD3c="
-  },
-  "8.5.9": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.9",
-    "hash": "sha256-9FspJdoRnag/7MDPTw3M4xS3kXgMkmD4i4/wuwwyuuY="
-  },
-  "8.5.10": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.10",
-    "hash": "sha256-ThPAO2gfvM8Nr1DybYPvFpm6pufZPZY4VlUVf09rxuE="
-  },
-  "8.5.11": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.11",
-    "hash": "sha256-a23ebpv3UKyTsv2kH8jMQhnKtZhjzhSXxcIV/ft0A8U="
-  },
-  "8.5.12": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.12",
-    "hash": "sha256-8Y1wFcnm1plbEnrOi3erzMgaRzVL2eHKok4Kt3AEd60="
-  },
-  "8.5.13": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.13",
-    "hash": "sha256-w/QabfEbL3pTmWUH4KEPbx4WZ1RWshhw8IU2OSyWbJ0="
-  },
-  "8.5.14": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.14",
-    "hash": "sha256-vBpaz3kYySuNLNfwUOVUfJNT3UG2MOFpum+066Xe2xM="
-  },
-  "8.5.15": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.15",
-    "hash": "sha256-8Wr2syZsOK9yvr+lWp8XgBYpgECsqQLBer3aDZ6syPk="
-  },
-  "8.5.16": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.16",
-    "hash": "sha256-j/CdO7xgErc6pjHbS0dKlnQnef/mfuZA4wouENqs9B4="
-  },
-  "8.5.17": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.17",
-    "hash": "sha256-n1o6eG40DHnmNXuifQC6UFwGzuiL22V++0qRmq1RSzc="
-  },
-  "8.5.18": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.18",
-    "hash": "sha256-cw5tNs3gBtUQt6Ib/qgn4p5EdOaizHc5da/RFszEqwk="
-  },
-  "8.5.19": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.19",
-    "hash": "sha256-99zB2e59VxjOpQ+C/DwrwZf/J2HU7I0pHjQ/2avwpqo="
-  },
-  "8.5.20": {
-    "repo": "swipl-devel",
-    "rev": "V8.5.20",
-    "hash": "sha256-9bRkkqzG9flXbbjNL2AnxwTPId542olGMbJX4V2ZnW8="
-  },
-  "9.1.0": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.0",
-    "hash": "sha256-IApaKYFMsNYH5Qoma2Gqou3QsdWp1CtdFDDkq+Ljwyo="
-  },
-  "9.1.1": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.1",
-    "hash": "sha256-llLcwYLrSFqz1twxSLky8j5hTClgEYGSB2l+cla5VtE="
-  },
-  "9.1.2": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.2",
-    "hash": "sha256-MO1EK/kMy5oXeN9EMGcmYY+XMQLOAC5rC+qFK5SqacM="
-  },
-  "9.1.3": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.3",
-    "hash": "sha256-R8HhFGjD79BbD5zV+jQ5z+d3ghrdx3PedBjsEjtSiBo="
-  },
-  "9.1.4": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.4",
-    "hash": "sha256-q//b22rcwWKaWBhefAhiUkarWG80CGeg13mrZn7wpGE="
-  },
-  "9.1.5": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.5",
-    "hash": "sha256-cQq2TLoYkWXTvoU3J2trLCa4shqlz1M/EFAW9WK2+Hw="
-  },
-  "9.1.6": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.6",
-    "hash": "sha256-nDEGfAC3qivOdQEGvVX8+79Qx/un4P1Lks5yNnQU6tE="
-  },
-  "9.1.7": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.7",
-    "hash": "sha256-SwjwDxVNyu8kpbTleiRbsh1/JvrWiRjPhDwnpRmh4GY="
-  },
-  "9.1.8": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.8",
-    "hash": "sha256-dyaRRQCRpCxtObzYqF/Yr/oV90ajvxREd1k+TY8KHhQ="
-  },
-  "9.1.9": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.9",
-    "hash": "sha256-OQbxCZjXf0cUP2nJFC4CsGk9OPJuVGCPOoRdxDkflFY="
-  },
-  "9.1.10": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.10",
-    "hash": "sha256-hr9cI0Ww6RfZs99iM1hFVw4sOYZFZWr8Vzv6dognCTQ="
-  },
-  "9.1.11": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.11",
-    "hash": "sha256-eAi7oCDnWwqLIoSc+Ehm3LWkBbBQhFtatgMxf6keOGI="
-  },
-  "9.1.12": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.12",
-    "hash": "sha256-fYlneijZ3eDQMRubeXmb5fB8hQ/P3Djty1j+OdhsyOM="
-  },
-  "9.1.13": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.13",
-    "hash": "sha256-4Gpw7Vv0ShQvedXfIhPE9udA8/ezXMxZ230BqqXxq98="
-  },
-  "9.1.14": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.14",
-    "hash": "sha256-h9t96UTM/2FJlAU8uBpsexC8psuZk5xqW3ELRAHUCj4="
-  },
-  "9.1.15": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.15",
-    "hash": "sha256-AnRtXjKeJBhpFYe9mP4kQMvcKAszWzBcoMHdpQOafCE="
-  },
-  "9.1.16": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.16",
-    "hash": "sha256-J3B5gKHBFBDvQILXlOYTrNlt4zGtzhwlQ+W0KEF0zr4="
-  },
-  "9.1.17": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.17",
-    "hash": "sha256-M0bXsa5XVgxHuulgxYYlIpMSg+9rknQHptjnYfxdsgQ="
-  },
-  "9.1.18": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.18",
-    "hash": "sha256-LO26hYklhZXFpql+9IDv8OepDL1i0PD7R7sK7IgKYos="
-  },
-  "9.1.19": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.19",
-    "hash": "sha256-+EBh4h3BAfGsKZjX6zsbT1WY76sG7pA+Bd2yuNmD/Z0="
-  },
-  "9.1.20": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.20",
-    "hash": "sha256-Hk+Mb6/wCo/wU19eYsEB8xtHQuhAbyE2OTt/0l3sVWo="
-  },
-  "9.1.21": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.21",
-    "hash": "sha256-c4OSntnwIzo6lGhpyNVtNM4el5FGrn8kcz8WkDRfQhU="
-  },
-  "9.1.22": {
-    "repo": "swipl-devel",
-    "rev": "V9.1.22",
-    "hash": "sha256-zpjPrrBtfzowb63nfVZwo/R68hno5c8fCQH8oEthSZM="
-  },
-  "9.3.0": {
-    "repo": "swipl-devel",
-    "rev": "V9.3.0",
-    "hash": "sha256-aKOzNDu9lLv79ornnt2/jXQ/lrLh40SF6LuX1fpCfcg="
-  },
-  "9.3.1": {
-    "repo": "swipl-devel",
-    "rev": "V9.3.1",
-    "hash": "sha256-zqJFdDZNNoMhlolRhrU1YcEJG/ZZFJTZKwRyoIOAq6k="
-  },
-  "9.3.2": {
-    "repo": "swipl-devel",
-    "rev": "V9.3.2",
-    "hash": "sha256-w40fYH0BK6GkjC6WiIQF2NEPS1de4/+rTqFdRt+Dx9Q="
-  },
-  "9.3.3": {
-    "repo": "swipl-devel",
-    "rev": "V9.3.3",
-    "hash": "sha256-bz2h8ZAyR9zWPSlpc6yHmBpmhan2FYmIFazaqIVOSSc="
-  },
-  "9.3.4": {
-    "repo": "swipl-devel",
-    "rev": "V9.3.4",
-    "hash": "sha256-6EjdssmuvFRIxxXJHx0ZWr2wdltaRPSzs8FGqDHXzho="
-  },
-  "9.3.5": {
-    "repo": "swipl-devel",
-    "rev": "V9.3.5",
-    "hash": "sha256-ZTfXEQJGPIlwCRrtuKJBxJXSwIyHqgV5g8Q+CiJtd8U="
-  },
-  "9.3.6": {
-    "repo": "swipl-devel",
-    "rev": "V9.3.6",
-    "hash": "sha256-hEVl//V+Lou7VXNuPpEsKDJPGR8Lt/Ha6URoc75A/sM="
-  },
-  "9.3.7": {
-    "repo": "swipl-devel",
-    "rev": "V9.3.7",
-    "hash": "sha256-AzyOq8t3js5le5lLNwqNzarw278V5Jq5g9zjYNg9rwc="
-  },
-  "9.3.8": {
-    "repo": "swipl-devel",
-    "rev": "V9.3.8",
-    "hash": "sha256-w5fcNe09kmh0emuLrRGXLBP518Ns3dttYhi4Pex5TeA="
-  },
   "8.4.0": {
     "repo": "swipl",
     "rev": "V8.4.0",
+    "version": "8.4.0",
     "hash": "sha256-HlTBK3fK9Zw3/7wYO7fw72GGXOs77NKAgydQ0uWURho="
   },
   "8.4.1": {
     "repo": "swipl",
     "rev": "V8.4.1",
+    "version": "8.4.1",
     "hash": "sha256-iMF+lCoahbWAsd9HRyNo9iZXuRfKNRvaEZEoPe4fESA="
   },
   "8.4.2": {
     "repo": "swipl",
     "rev": "V8.4.2",
+    "version": "8.4.2",
     "hash": "sha256-5lfsBLn4DIPJhZEHP7NfnuAbfirtS57RfiVloHoCYD4="
   },
   "8.4.3": {
     "repo": "swipl",
     "rev": "V8.4.3",
+    "version": "8.4.3",
     "hash": "sha256-cbR+6WYxvzF37XIufEKs+TQNNgrsYaCkZskQy8zWrIY="
   },
   "9.0.0": {
     "repo": "swipl",
     "rev": "V9.0.0",
+    "version": "9.0.0",
     "hash": "sha256-9jCk4YmhB4/Ne88D321HhJkXEKqqW1F1jnRYwwX88xU="
   },
   "9.0.1": {
     "repo": "swipl",
     "rev": "V9.0.1",
+    "version": "9.0.1",
     "hash": "sha256-wAsspEtGOkJAA6Gpaaq2YrTbDI1FFXtD5MaaF6ZzGl8="
   },
   "9.0.2": {
     "repo": "swipl",
     "rev": "V9.0.2",
+    "version": "9.0.2",
     "hash": "sha256-OZfS7t+6H5nZ1UFGJ/pqgU2++1/YywJCUbfJn01ootM="
   },
   "9.0.3": {
     "repo": "swipl",
     "rev": "V9.0.3",
+    "version": "9.0.3",
     "hash": "sha256-T5m4l5liBn2RMeCVRHru9Nvxp25eXdIH+apbMxP9P18="
   },
   "9.0.4": {
     "repo": "swipl",
     "rev": "V9.0.4",
+    "version": "9.0.4",
     "hash": "sha256-LjrpHi+bzj24YDegsK3HsmOxUdvykSjEfWSFLVWrM1A="
   },
   "9.2.0": {
     "repo": "swipl",
     "rev": "V9.2.0",
+    "version": "9.2.0",
     "hash": "sha256-DGMJUEdk4Nklj8gTJKFh+YL+6jI1oTgT3bAT6Osg8ig="
   },
   "9.2.1": {
     "repo": "swipl",
     "rev": "V9.2.1",
+    "version": "9.2.1",
     "hash": "sha256-ZmNQBW7+tqk6u9jpBgPYayeeqTH5cvoNP6wDFt9HFD8="
   },
   "9.2.2": {
     "repo": "swipl",
     "rev": "V9.2.2",
+    "version": "9.2.2",
     "hash": "sha256-z3UnViEcKtd9rwFcMJJGhSBavogdUBONNd/bKCgmzug="
   },
   "9.2.3": {
     "repo": "swipl",
     "rev": "V9.2.3",
+    "version": "9.2.3",
     "hash": "sha256-9yWcfHpo4gisptoRzfwLsQOzLmmltH+C+fUOnC7g6xw="
   },
   "9.2.4": {
     "repo": "swipl",
     "rev": "V9.2.4",
+    "version": "9.2.4",
     "hash": "sha256-70WruixRuVgTtab6nj6az7SW1zUFcoUMWehFnRMPO/A="
   },
   "9.2.5": {
     "repo": "swipl",
     "rev": "V9.2.5",
+    "version": "9.2.5",
     "hash": "sha256-WbpYu6b0WPfKoAOkBZduWK20vwOYuDUDpJuj19qzPtw="
+  },
+  "8.5.0": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.0",
+    "version": "8.5.0",
+    "hash": "sha256-AhQuKcUIcPhQ8yzbh2O00sPW29eSUNO9FHnR5/r8iss="
+  },
+  "8.5.1": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.1",
+    "version": "8.5.1",
+    "hash": "sha256-29ZsXt4lRI7qK20wJekr+K0g7o7VQzxryPEhcm1E8Bo="
+  },
+  "8.5.2": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.2",
+    "version": "8.5.2",
+    "hash": "sha256-1SSdq+SoSmRkK+GX0LpG2Pi1kozWE9OWDJMpJHUTEko="
+  },
+  "8.5.3": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.3",
+    "version": "8.5.3",
+    "hash": "sha256-AnXJo7M6paaRgONf8Tns1xH6Kr4HNb96oWEbBRLU+Eg="
+  },
+  "8.5.4": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.4",
+    "version": "8.5.4",
+    "hash": "sha256-c0M10lWgYGxOE09otGXvv97GjlNEGlN1UrS+1yjLtqQ="
+  },
+  "8.5.5": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.5",
+    "version": "8.5.5",
+    "hash": "sha256-WR4l6MspKGGnebLCID8YQH0qmWXSz3d5MIojQuL+cu4="
+  },
+  "8.5.6": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.6",
+    "version": "8.5.6",
+    "hash": "sha256-ZyIsnf5Vm44gz1JuxL0Fw/JeCLhnPkeCIalgpu5h8HI="
+  },
+  "8.5.7": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.7",
+    "version": "8.5.7",
+    "hash": "sha256-nTRU/Clr0YPRVZA97FaFEaTNmRYy5wxRcHiVQ7ydjl0="
+  },
+  "8.5.8": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.8",
+    "version": "8.5.8",
+    "hash": "sha256-KY/yMkcV2H6Fcp4rApQg+uYvmZng67SESe2F2XQMD3c="
+  },
+  "8.5.9": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.9",
+    "version": "8.5.9",
+    "hash": "sha256-9FspJdoRnag/7MDPTw3M4xS3kXgMkmD4i4/wuwwyuuY="
+  },
+  "8.5.10": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.10",
+    "version": "8.5.10",
+    "hash": "sha256-ThPAO2gfvM8Nr1DybYPvFpm6pufZPZY4VlUVf09rxuE="
+  },
+  "8.5.11": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.11",
+    "version": "8.5.11",
+    "hash": "sha256-a23ebpv3UKyTsv2kH8jMQhnKtZhjzhSXxcIV/ft0A8U="
+  },
+  "8.5.12": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.12",
+    "version": "8.5.12",
+    "hash": "sha256-8Y1wFcnm1plbEnrOi3erzMgaRzVL2eHKok4Kt3AEd60="
+  },
+  "8.5.13": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.13",
+    "version": "8.5.13",
+    "hash": "sha256-w/QabfEbL3pTmWUH4KEPbx4WZ1RWshhw8IU2OSyWbJ0="
+  },
+  "8.5.14": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.14",
+    "version": "8.5.14",
+    "hash": "sha256-vBpaz3kYySuNLNfwUOVUfJNT3UG2MOFpum+066Xe2xM="
+  },
+  "8.5.15": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.15",
+    "version": "8.5.15",
+    "hash": "sha256-8Wr2syZsOK9yvr+lWp8XgBYpgECsqQLBer3aDZ6syPk="
+  },
+  "8.5.16": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.16",
+    "version": "8.5.16",
+    "hash": "sha256-j/CdO7xgErc6pjHbS0dKlnQnef/mfuZA4wouENqs9B4="
+  },
+  "8.5.17": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.17",
+    "version": "8.5.17",
+    "hash": "sha256-n1o6eG40DHnmNXuifQC6UFwGzuiL22V++0qRmq1RSzc="
+  },
+  "8.5.18": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.18",
+    "version": "8.5.18",
+    "hash": "sha256-cw5tNs3gBtUQt6Ib/qgn4p5EdOaizHc5da/RFszEqwk="
+  },
+  "8.5.19": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.19",
+    "version": "8.5.19",
+    "hash": "sha256-99zB2e59VxjOpQ+C/DwrwZf/J2HU7I0pHjQ/2avwpqo="
+  },
+  "8.5.20": {
+    "repo": "swipl-devel",
+    "rev": "V8.5.20",
+    "version": "8.5.20",
+    "hash": "sha256-9bRkkqzG9flXbbjNL2AnxwTPId542olGMbJX4V2ZnW8="
+  },
+  "9.1.0": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.0",
+    "version": "9.1.0",
+    "hash": "sha256-IApaKYFMsNYH5Qoma2Gqou3QsdWp1CtdFDDkq+Ljwyo="
+  },
+  "9.1.1": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.1",
+    "version": "9.1.1",
+    "hash": "sha256-llLcwYLrSFqz1twxSLky8j5hTClgEYGSB2l+cla5VtE="
+  },
+  "9.1.2": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.2",
+    "version": "9.1.2",
+    "hash": "sha256-MO1EK/kMy5oXeN9EMGcmYY+XMQLOAC5rC+qFK5SqacM="
+  },
+  "9.1.3": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.3",
+    "version": "9.1.3",
+    "hash": "sha256-R8HhFGjD79BbD5zV+jQ5z+d3ghrdx3PedBjsEjtSiBo="
+  },
+  "9.1.4": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.4",
+    "version": "9.1.4",
+    "hash": "sha256-q//b22rcwWKaWBhefAhiUkarWG80CGeg13mrZn7wpGE="
+  },
+  "9.1.5": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.5",
+    "version": "9.1.5",
+    "hash": "sha256-cQq2TLoYkWXTvoU3J2trLCa4shqlz1M/EFAW9WK2+Hw="
+  },
+  "9.1.6": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.6",
+    "version": "9.1.6",
+    "hash": "sha256-nDEGfAC3qivOdQEGvVX8+79Qx/un4P1Lks5yNnQU6tE="
+  },
+  "9.1.7": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.7",
+    "version": "9.1.7",
+    "hash": "sha256-SwjwDxVNyu8kpbTleiRbsh1/JvrWiRjPhDwnpRmh4GY="
+  },
+  "9.1.8": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.8",
+    "version": "9.1.8",
+    "hash": "sha256-dyaRRQCRpCxtObzYqF/Yr/oV90ajvxREd1k+TY8KHhQ="
+  },
+  "9.1.9": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.9",
+    "version": "9.1.9",
+    "hash": "sha256-OQbxCZjXf0cUP2nJFC4CsGk9OPJuVGCPOoRdxDkflFY="
+  },
+  "9.1.10": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.10",
+    "version": "9.1.10",
+    "hash": "sha256-hr9cI0Ww6RfZs99iM1hFVw4sOYZFZWr8Vzv6dognCTQ="
+  },
+  "9.1.11": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.11",
+    "version": "9.1.11",
+    "hash": "sha256-eAi7oCDnWwqLIoSc+Ehm3LWkBbBQhFtatgMxf6keOGI="
+  },
+  "9.1.12": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.12",
+    "version": "9.1.12",
+    "hash": "sha256-fYlneijZ3eDQMRubeXmb5fB8hQ/P3Djty1j+OdhsyOM="
+  },
+  "9.1.13": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.13",
+    "version": "9.1.13",
+    "hash": "sha256-4Gpw7Vv0ShQvedXfIhPE9udA8/ezXMxZ230BqqXxq98="
+  },
+  "9.1.14": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.14",
+    "version": "9.1.14",
+    "hash": "sha256-h9t96UTM/2FJlAU8uBpsexC8psuZk5xqW3ELRAHUCj4="
+  },
+  "9.1.15": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.15",
+    "version": "9.1.15",
+    "hash": "sha256-AnRtXjKeJBhpFYe9mP4kQMvcKAszWzBcoMHdpQOafCE="
+  },
+  "9.1.16": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.16",
+    "version": "9.1.16",
+    "hash": "sha256-J3B5gKHBFBDvQILXlOYTrNlt4zGtzhwlQ+W0KEF0zr4="
+  },
+  "9.1.17": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.17",
+    "version": "9.1.17",
+    "hash": "sha256-M0bXsa5XVgxHuulgxYYlIpMSg+9rknQHptjnYfxdsgQ="
+  },
+  "9.1.18": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.18",
+    "version": "9.1.18",
+    "hash": "sha256-LO26hYklhZXFpql+9IDv8OepDL1i0PD7R7sK7IgKYos="
+  },
+  "9.1.19": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.19",
+    "version": "9.1.19",
+    "hash": "sha256-+EBh4h3BAfGsKZjX6zsbT1WY76sG7pA+Bd2yuNmD/Z0="
+  },
+  "9.1.20": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.20",
+    "version": "9.1.20",
+    "hash": "sha256-Hk+Mb6/wCo/wU19eYsEB8xtHQuhAbyE2OTt/0l3sVWo="
+  },
+  "9.1.21": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.21",
+    "version": "9.1.21",
+    "hash": "sha256-c4OSntnwIzo6lGhpyNVtNM4el5FGrn8kcz8WkDRfQhU="
+  },
+  "9.1.22": {
+    "repo": "swipl-devel",
+    "rev": "V9.1.22",
+    "version": "9.1.22",
+    "hash": "sha256-zpjPrrBtfzowb63nfVZwo/R68hno5c8fCQH8oEthSZM="
+  },
+  "9.3.0": {
+    "repo": "swipl-devel",
+    "rev": "V9.3.0",
+    "version": "9.3.0",
+    "hash": "sha256-aKOzNDu9lLv79ornnt2/jXQ/lrLh40SF6LuX1fpCfcg="
+  },
+  "9.3.1": {
+    "repo": "swipl-devel",
+    "rev": "V9.3.1",
+    "version": "9.3.1",
+    "hash": "sha256-zqJFdDZNNoMhlolRhrU1YcEJG/ZZFJTZKwRyoIOAq6k="
+  },
+  "9.3.2": {
+    "repo": "swipl-devel",
+    "rev": "V9.3.2",
+    "version": "9.3.2",
+    "hash": "sha256-w40fYH0BK6GkjC6WiIQF2NEPS1de4/+rTqFdRt+Dx9Q="
+  },
+  "9.3.3": {
+    "repo": "swipl-devel",
+    "rev": "V9.3.3",
+    "version": "9.3.3",
+    "hash": "sha256-bz2h8ZAyR9zWPSlpc6yHmBpmhan2FYmIFazaqIVOSSc="
+  },
+  "9.3.4": {
+    "repo": "swipl-devel",
+    "rev": "V9.3.4",
+    "version": "9.3.4",
+    "hash": "sha256-6EjdssmuvFRIxxXJHx0ZWr2wdltaRPSzs8FGqDHXzho="
+  },
+  "9.3.5": {
+    "repo": "swipl-devel",
+    "rev": "V9.3.5",
+    "version": "9.3.5",
+    "hash": "sha256-ZTfXEQJGPIlwCRrtuKJBxJXSwIyHqgV5g8Q+CiJtd8U="
+  },
+  "9.3.6": {
+    "repo": "swipl-devel",
+    "rev": "V9.3.6",
+    "version": "9.3.6",
+    "hash": "sha256-hEVl//V+Lou7VXNuPpEsKDJPGR8Lt/Ha6URoc75A/sM="
+  },
+  "9.3.7": {
+    "repo": "swipl-devel",
+    "rev": "V9.3.7",
+    "version": "9.3.7",
+    "hash": "sha256-AzyOq8t3js5le5lLNwqNzarw278V5Jq5g9zjYNg9rwc="
+  },
+  "9.3.8": {
+    "repo": "swipl-devel",
+    "rev": "V9.3.8",
+    "version": "9.3.8",
+    "hash": "sha256-w5fcNe09kmh0emuLrRGXLBP518Ns3dttYhi4Pex5TeA="
   }
 }

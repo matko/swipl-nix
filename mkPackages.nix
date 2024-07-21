@@ -5,9 +5,31 @@
 }:
 let lib = pkgs.lib;
     package = import ./package.nix;
+    branches = lib.importJSON ./branches.json;
     tags = lib.importJSON ./tags.json;
 
-    derivations = lib.attrsets.mapAttrs' (version: tag:
+    branchDerivations = lib.attrsets.mapAttrs' (name: branch:
+      let reportedVersion = "${branch.version}-${builtins.substring 0 7 branch.rev}";
+          base = package {
+            inherit swiProlog fetchFromGitHub;
+
+            version = reportedVersion;
+            inherit (branch) repo rev hash;
+          }; in
+      lib.attrsets.nameValuePair
+        name
+        (base.overrideAttrs {
+          cmakeFlags = base.cmakeFlags ++ [
+            "-DGIT_VERSION=${reportedVersion}"
+          ];
+          # not sure if this patch even does anything
+          prePatch = ''
+echo ${reportedVersion} >VERSION
+'';
+        })
+    ) branches;
+
+    tagDerivations = lib.attrsets.mapAttrs' (version: tag:
       lib.attrsets.nameValuePair
         (builtins.replaceStrings ["."] ["_"] version)
         (package {
@@ -17,6 +39,7 @@ let lib = pkgs.lib;
           inherit (tag) repo rev hash;
         })
     ) tags;
+    derivations = branchDerivations // tagDerivations;
 
     aliases = lib.importJSON ./alias.json;
     aliasedDerivations = lib.attrsets.mapAttrs' (version: full_version:

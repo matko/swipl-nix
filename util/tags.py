@@ -32,6 +32,18 @@ def tags(checkout_dir, repo_name):
 
     return result
 
+class Branch:
+    def __init__(self, name, hash):
+        self.name = name
+        self.hash = hash
+
+def branches(checkout_dir, repo_name):
+    repo_path = resolve.repo_alias_to_path(checkout_dir, repo_name)
+    repo = git.Repo(repo_path)
+    result = list(map(lambda b: Branch(b.name, b.commit.hexsha), repo.branches))
+
+    return result
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='calculate checksum for a particular version')
     parser.add_argument('checkout_dir')
