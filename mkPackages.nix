@@ -22,8 +22,9 @@ let lib = pkgs.lib;
           cmakeFlags = base.cmakeFlags ++ [
             "-DGIT_VERSION=${reportedVersion}"
           ];
-          # not sure if this patch even does anything
-          prePatch = ''
+          # Not sure if this patch even does anything.
+          # The version that is reported on startup is the one in the cmake flags.
+          postPatch = ''
 echo ${reportedVersion} >VERSION
 '';
         })

@@ -37,6 +37,13 @@ def reported_version(checkout_dir, repo_alias, rev):
     blob = commit.tree / 'VERSION'
     return blob.data_stream.read().decode('utf-8').rstrip()
 
+def resolve_rev(checkout_dir, repo_alias, rev):
+    repo_path = resolve.repo_alias_to_path(checkout_dir, repo_alias)
+    repo = git.Repo(repo_path)
+    commit = repo.commit(rev)
+
+    return commit.hexsha
+
 def rev_to_hash_info(checkout_dir, repo_alias, rev, revname=None):
     print(f'about to retrieve hash for {revname or rev}', file=sys.stderr)
     c = checksum(checkout_dir, repo_alias, rev)
@@ -45,7 +52,7 @@ def rev_to_hash_info(checkout_dir, repo_alias, rev, revname=None):
     print(f'done retrieving hash for {revname or rev}', file=sys.stderr)
     return {
         "repo": repo_name,
-        "rev": rev,
+        "rev": resolve_rev(checkout_dir, repo_alias, rev),
         "version": v,
         "hash": c,
     }
