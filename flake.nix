@@ -2,7 +2,7 @@
   description = "SWI-Prolog versions";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:matko/nixpkgs/swipl_to_9.2.6";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
