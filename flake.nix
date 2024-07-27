@@ -10,14 +10,22 @@
     let mkPackages = import ./mkPackages.nix; in
     {
       overlays.default = import ./overlay.nix;
-      packages = builtins.mapAttrs (system: _:
-        mkPackages {pkgs=nixpkgs.legacyPackages.${system};}
-      ) flake-utils.lib.system;
+    } //
+    flake-utils.lib.eachSystem flake-utils.lib.allSystems (system:
+      let pkgs = nixpkgs.legacyPackages.${system}; in
+      rec {
+        packages = mkPackages {pkgs=nixpkgs.legacyPackages.${system};};
+        apps = {
+          sizes =
+            let p = pkgs.callPackage ./sizes.nix {swiProlog=packages.master;}; in
+            {
+            type = "app";
+            program = "${p}";
+          };
+        };
 
-      devShells = builtins.mapAttrs (system: _:
-        {
+        devShells = {
           default = import ./shell.nix {pkgs=nixpkgs.legacyPackages.${system};};
-        }
-      ) flake-utils.lib.system;
-  };
+        };
+      });
 }
