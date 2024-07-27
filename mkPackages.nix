@@ -37,7 +37,7 @@ echo ${reportedVersion} >VERSION
       lib.attrsets.nameValuePair
         (builtins.replaceStrings ["."] ["_"] version)
         (package {
-          inherit swiProlog fetchFromGitHub;
+          inherit swiProlog fetchFromGitHub tcmalloc;
 
           inherit version;
           inherit (tag) repo rev hash;
