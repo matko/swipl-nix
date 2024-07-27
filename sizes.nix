@@ -96,7 +96,7 @@ subtractedSize () {
 printSubtractedSize () {
   size=$(closureSize $3)
   subtracted=$(subtractedSize $2 $3)
-  printf "%-10s %12s %12s %12s\n" "$1" "$size" "''$(mbSize $size)M" "-''$(mbSize $subtracted)"
+  printf "%-10s %12s %12s %12s\n" "$1" "$size" "''$(mbSize $size)M" "-''$(mbSize $subtracted)M"
 }
 
 printf "%10s %12s %12s %12s\n" "PKG" "SIZE" "MBSIZE" "CHANGE"
