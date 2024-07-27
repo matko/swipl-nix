@@ -1,9 +1,12 @@
 {
   pkgs ? import <nixpkgs> {},
   swiProlog ? pkgs.swiProlog,
-  fetchFromGitHub ? pkgs.fetchFromGitHub
+  fetchFromGitHub ? pkgs.fetchFromGitHub,
+  callPackage ? pkgs.callPackage
+
 }:
 let lib = pkgs.lib;
+    tcmalloc = callPackage ./tcmalloc.nix {};
     package = import ./package.nix;
     branches = lib.importJSON ./branches.json;
     tags = lib.importJSON ./tags.json;
@@ -11,7 +14,7 @@ let lib = pkgs.lib;
     branchDerivations = lib.attrsets.mapAttrs' (name: branch:
       let reportedVersion = "${branch.version}-${builtins.substring 0 7 branch.rev}";
           base = package {
-            inherit swiProlog fetchFromGitHub;
+            inherit swiProlog fetchFromGitHub tcmalloc;
 
             version = reportedVersion;
             inherit (branch) repo rev hash;

@@ -1,13 +1,17 @@
 {
   swiProlog,
   fetchFromGitHub,
+  tcmalloc,
 
   version,
   repo,
   rev,
   hash
 }:
-swiProlog.overrideAttrs {
+(swiProlog.override {
+  # minimize gperftools to just tcmalloc part
+  gperftools = tcmalloc;
+}).overrideAttrs {
   inherit version;
   src = fetchFromGitHub {
     owner = "SWI-Prolog";
