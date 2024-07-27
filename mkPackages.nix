@@ -18,8 +18,8 @@ let lib = pkgs.lib;
           }; in
       lib.attrsets.nameValuePair
         name
-        (base.overrideAttrs {
-          cmakeFlags = base.cmakeFlags ++ [
+        (base.overrideAttrs (_: prev: {
+          cmakeFlags = prev.cmakeFlags ++ [
             "-DGIT_VERSION=${reportedVersion}"
           ];
           # Not sure if this patch even does anything.
@@ -27,7 +27,7 @@ let lib = pkgs.lib;
           postPatch = ''
 echo ${reportedVersion} >VERSION
 '';
-        })
+        }))
     ) branches;
 
     tagDerivations = lib.attrsets.mapAttrs' (version: tag:
