@@ -1,7 +1,6 @@
 name: Auto Update Files
 
 on:
-  push:
   repository_dispatch:
     types: [update_trigger]
   workflow_dispatch:
@@ -19,9 +18,16 @@ jobs:
       with:
         nix_path: nixpkgs=channel:nixos-unstable
     - uses: DeterminateSystems/magic-nix-cache-action@main
+    - name: Setup repository cache
+      uses: actions/cache@v3
+      env:
+        cache-name: swi-prolog-repositories
+      with:
+        path: ~/repos
+        key: swi-prolog-repositories
     - name: Run update script
       run: |
-        nix develop . --command ./refresh.sh
+        nix develop . --command ./refresh.sh ~/repos
     - name: Commit changes
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
