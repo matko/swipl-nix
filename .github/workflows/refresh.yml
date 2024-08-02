@@ -26,6 +26,8 @@ jobs:
         path: ~/repos
         key: swi-prolog-repositories
     - name: Run update script
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         nix develop . --command ./refresh.sh ~/repos
     - name: Commit changes
