@@ -21,7 +21,7 @@ swiProlog.overrideAttrs (final: prev: {
 echo "display is ''${DISPLAY:-unset}"
 '';
   passthru = prev // rec {
-    overridePackages = overrides: builtins.foldl' (p: n: p.overridePackage n) final.finalPackage overrides;
+    overridePackages = overrides: builtins.foldl' (p: def: p.overridePackage def) final.finalPackage (lib.mapAttrsToList (n: v: v // {name=n;}) overrides);
     overridePackage = ({ name, path ? null, rev ? null, hash ? null }:
       let path' = if path != null then path else fetchFromGitHub {
             owner = "SWI-Prolog";
