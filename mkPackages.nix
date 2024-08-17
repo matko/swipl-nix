@@ -11,7 +11,7 @@ let lib = pkgs.lib;
     branchDerivations = lib.attrsets.mapAttrs' (name: branch:
       let reportedVersion = "${branch.version}-${builtins.substring 0 7 branch.rev}";
           base = package {
-            inherit swiProlog fetchFromGitHub;
+            inherit swiProlog fetchFromGitHub lib;
 
             version = reportedVersion;
             inherit (branch) repo rev hash;
@@ -34,7 +34,7 @@ echo ${reportedVersion} >VERSION
       lib.attrsets.nameValuePair
         (builtins.replaceStrings ["."] ["_"] version)
         (package {
-          inherit swiProlog fetchFromGitHub;
+          inherit swiProlog fetchFromGitHub lib;
 
           inherit version;
           inherit (tag) repo rev hash;
