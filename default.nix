@@ -1,2 +1,2 @@
-{ pkgs ? import <nixpkgs> {overlays = [(import ./overlay.nix)];} }:
-pkgs.swipl-nix
+{ pkgs ? import <nixpkgs> {} }:
+import ./mkPackages.nix {inherit pkgs;}

@@ -30,8 +30,7 @@ echo "display is ''${DISPLAY:-unset}"
           }; in
       final.finalPackage.overrideAttrs (f2: p2: {
         postUnpack = p2.postUnpack ++ [''
-echo Replacing package ${name} in $sourceRoot
-echo replacement is ${path'}
+echo Replacing package ${name}
 rm -rf $sourceRoot/packages/${name}
 cp -r ${path'} $sourceRoot/packages/${name}
 chmod -R u+w $sourceRoot/packages/${name}
