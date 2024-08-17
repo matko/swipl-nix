@@ -48,8 +48,16 @@ echo ${reportedVersion} >VERSION
         (builtins.replaceStrings ["."] ["_"] version)
         derivations.${builtins.replaceStrings ["."] ["_"] full_version}
     ) aliases;
+    allDerivations =
+      derivations // aliasedDerivations // {
+        default = aliasedDerivations.latest;
+        devel = aliasedDerivations.latest-devel;
+      };
+    fullDerivations =
+      lib.attrsets.mapAttrs' (name: pkg:
+        lib.attrsets.nameValuePair
+          (name + "-gui")
+          (pkg.override {withGui = true;})
+      ) allDerivations;
 in
-derivations // aliasedDerivations // {
-  default = aliasedDerivations.latest;
-  devel = aliasedDerivations.latest-devel;
-}
+allDerivations // fullDerivations
