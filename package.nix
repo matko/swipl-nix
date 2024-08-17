@@ -34,8 +34,6 @@ echo Replacing package ${name}
 rm -rf $sourceRoot/packages/${name}
 cp -r ${path'} $sourceRoot/packages/${name}
 chmod -R u+w $sourceRoot/packages/${name}
-ls -alh $sourceRoot/packages
-ls -alh $sourceRoot/packages/${name}
 ''];
       }));
   };
