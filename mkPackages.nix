@@ -51,6 +51,7 @@ echo ${reportedVersion} >VERSION
     allDerivations =
       derivations // aliasedDerivations // {
         default = aliasedDerivations.latest;
+        stable = aliasedDerivations.latest;
         devel = aliasedDerivations.latest-devel;
       };
     fullDerivations =
