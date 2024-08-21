@@ -3,17 +3,29 @@
 from github import Github, Auth
 import git
 import os
+import re
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-def package_repo_urls(gh):
+def package_repo_urls(github_token):
+    a = None
+    if github_token:
+        a = Auth.Token(github_token)
+    gh = Github(auth=a)
     org = gh.get_organization('SWI-Prolog')
 
     repos = org.get_repos(type = 'public')
 
-    return [repo.clone_url for repo in repos if repo.name.startswith('packages-') or repo.name.startswith('contrib-')]
+    return [authenticated_repo_url(repo.clone_url, github_token) for repo in repos if repo.name.startswith('packages-') or repo.name.startswith('contrib-')]
+
+def authenticated_repo_url(url, token):
+    if token is None:
+        return url
+    pattern = r"(https://)(github\.com/.*)"
+    replacement = rf"\1{token}@\2"
+    return re.sub(pattern, replacement, url)
 
 
 def ensure_repo(repo_url, repos_path):
@@ -37,14 +49,16 @@ def ensure_repo(repo_url, repos_path):
 
     repo.remotes.origin.fetch(tags=True, prune=True)
 
-def checkout(gh, dir='repos'):
+def checkout(dir='repos'):
+    print(f'checking out in {dir}')
     os.makedirs(dir, exist_ok=True)
 
+    github_token = os.getenv("GITHUB_TOKEN")
     # first, a list of the non-package repos
     with open(os.path.join(script_dir, '../fixed-repos.list'), 'r') as f:
-        static_repos = [repo.strip() for repo in f]
+        static_repos = [authenticated_repo_url(repo.strip(), github_token) for repo in f]
 
-    packages = package_repo_urls(gh)
+    packages = package_repo_urls(github_token)
 
     repos = static_repos + packages
 
@@ -55,14 +69,8 @@ def checkout(gh, dir='repos'):
         pass
 
 if __name__ == '__main__':
-    github_token = os.getenv("GITHUB_TOKEN")
-    a = None
-    if github_token:
-        a = Auth.Token(github_token)
-    gh = Github(auth=a)
-
     parser = argparse.ArgumentParser(description='checkout all SWI-Prolog related repositories, or refetch them if they are already checked out.')
     parser.add_argument('directory', help='the directory where the checkout will take place', default='repos', nargs='?')
 
     args = parser.parse_args()
-    checkout(gh, args.directory)
+    checkout(args.directory)

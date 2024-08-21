@@ -14,7 +14,7 @@ let lib = pkgs.lib;
     branchDerivations = lib.attrsets.mapAttrs' (name: branch:
       let reportedVersion = "${branch.version}-${builtins.substring 0 7 branch.rev}";
           base = package {
-            inherit swiProlog fetchFromGitHub tcmalloc;
+            inherit swiProlog fetchFromGitHub lib tcmalloc;
 
             version = reportedVersion;
             inherit (branch) repo rev hash;
@@ -37,7 +37,7 @@ echo ${reportedVersion} >VERSION
       lib.attrsets.nameValuePair
         (builtins.replaceStrings ["."] ["_"] version)
         (package {
-          inherit swiProlog fetchFromGitHub tcmalloc;
+          inherit swiProlog fetchFromGitHub lib tcmalloc;
 
           inherit version;
           inherit (tag) repo rev hash;
@@ -51,8 +51,17 @@ echo ${reportedVersion} >VERSION
         (builtins.replaceStrings ["."] ["_"] version)
         derivations.${builtins.replaceStrings ["."] ["_"] full_version}
     ) aliases;
+    allDerivations =
+      derivations // aliasedDerivations // {
+        default = aliasedDerivations.latest;
+        stable = aliasedDerivations.latest;
+        devel = aliasedDerivations.latest-devel;
+      };
+    fullDerivations =
+      lib.attrsets.mapAttrs' (name: pkg:
+        lib.attrsets.nameValuePair
+          (name + "-gui")
+          (pkg.override {withGui = true;})
+      ) allDerivations;
 in
-derivations // aliasedDerivations // {
-  default = aliasedDerivations.latest;
-  devel = aliasedDerivations.latest-devel;
-}
+allDerivations // fullDerivations
