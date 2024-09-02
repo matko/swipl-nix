@@ -47,6 +47,12 @@
     "version": "8.5.17",
     "hash": "sha256-bWss6XerXEfWFu8PrXqfVr9BYtUsqgpdxJSX0lzEr/g="
   },
+  "scratch/align-with-spaces": {
+    "repo": "swipl-devel",
+    "rev": "5a9c4b8eb3cb74fc716d182f497810568fefaf0c",
+    "version": "9.3.10",
+    "hash": "sha256-pJrSv53dMv3Tou3amvz2AsBUPmGrAV5yMlIoqZHxsaU="
+  },
   "scratch/wasm-doc": {
     "repo": "swipl-devel",
     "rev": "9430a8be0d8f9bc0912238d46767dbf429ef7a9e",
