@@ -29,6 +29,12 @@
     "version": "8.5.18",
     "hash": "sha256-uoCmzVkXxx3KS4NZ6kvpo9y/VUmyGmLieGR+TAchCIo="
   },
+  "index-enhancements": {
+    "repo": "swipl-devel",
+    "rev": "bec194a3fb3f206f18169a3634c167ba06b4ab84",
+    "version": "9.3.17",
+    "hash": "sha256-yenx1d/ZiWf3A846nQpyvmRySmd3PXzADHG//x2qc5g="
+  },
   "master": {
     "repo": "swipl-devel",
     "rev": "04f1f56494d309bba43e8383ac8726dcd4911de6",
