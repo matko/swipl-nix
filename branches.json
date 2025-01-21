@@ -71,6 +71,12 @@
     "version": "9.1.4",
     "hash": "sha256-UbOwny/8YVxEIVYOH3hngw2OhzvF6PcUC4V6gQmjuLY="
   },
+  "shallow-bt": {
+    "repo": "swipl-devel",
+    "rev": "ddd6be658b2f07903b8999ed8bc4b69b9cc26f7c",
+    "version": "9.3.18",
+    "hash": "sha256-8UGDjcIwdNNXzf5/7pkB/8XqZv6S4TRTG4yQs01nTME="
+  },
   "strptime": {
     "repo": "swipl-devel",
     "rev": "db1404140d84dcc2e89d8908822241c7bed5d627",
