@@ -31,9 +31,9 @@
   },
   "index": {
     "repo": "swipl-devel",
-    "rev": "be542999fd6ac61481c6cb6554e1e33953ad007c",
+    "rev": "94adedd027ddecd9761127cd56d66f1b140d6359",
     "version": "9.3.18",
-    "hash": "sha256-es9JVpkEnSy8qvLqw1f/8yZkWR2bygOe+l1570CyWLo="
+    "hash": "sha256-NrvStQe4hp9c3nk1tva9dfqitxjITPNozGGGe4rSnkE="
   },
   "index-enhancements": {
     "repo": "swipl-devel",
@@ -70,12 +70,6 @@
     "rev": "9430a8be0d8f9bc0912238d46767dbf429ef7a9e",
     "version": "9.1.4",
     "hash": "sha256-UbOwny/8YVxEIVYOH3hngw2OhzvF6PcUC4V6gQmjuLY="
-  },
-  "shallow-bt": {
-    "repo": "swipl-devel",
-    "rev": "ddd6be658b2f07903b8999ed8bc4b69b9cc26f7c",
-    "version": "9.3.18",
-    "hash": "sha256-8UGDjcIwdNNXzf5/7pkB/8XqZv6S4TRTG4yQs01nTME="
   },
   "strptime": {
     "repo": "swipl-devel",
