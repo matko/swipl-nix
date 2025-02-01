@@ -73,9 +73,9 @@
   },
   "st-engines": {
     "repo": "swipl-devel",
-    "rev": "7772c455cc7cfa13f53f3f5c7538e0c3830d9bee",
+    "rev": "88a906bc9ac2c28658f53d1b0c8aa2d7720880b6",
     "version": "9.3.19",
-    "hash": "sha256-oMPcSeVJZMbxMx2QzVStNBelT1bU0DoQunEEIBJdhB4="
+    "hash": "sha256-kCmDAsqJRiQeD62JLesogI5zOkbpsXXUYZ6WNLt6+EM="
   },
   "strptime": {
     "repo": "swipl-devel",
