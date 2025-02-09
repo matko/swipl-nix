@@ -82,5 +82,11 @@
     "rev": "db1404140d84dcc2e89d8908822241c7bed5d627",
     "version": "9.3.12",
     "hash": "sha256-fjFQb/WF8lvcsWaIodnqNzHzyHbPf7IEiI6VJA6Iyqk="
+  },
+  "trace-yield-state": {
+    "repo": "swipl-devel",
+    "rev": "3865095666748259e0712bceb99ab2fc2df0f34e",
+    "version": "9.3.20",
+    "hash": "sha256-jc4WHFwqAoTfRkrtVDNk3CF9b5E6aJoBz2JJFC26cpU="
   }
 }
