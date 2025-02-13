@@ -73,9 +73,9 @@
   },
   "simplify-backtrack": {
     "repo": "swipl-devel",
-    "rev": "279b5f27092851a6c23226c9a5e95d53d9f83ddb",
+    "rev": "7394304f33b9ad9138fbbc8e54703666adccd5a5",
     "version": "9.3.20",
-    "hash": "sha256-zdr6jgnVmSH8IdG6UrQcVyDEocYUdYn7ccB2JRqDSKM="
+    "hash": "sha256-fd0jieLi3Fid/vHnjMvWuhRxxUK3UNREbxR4CE2wl94="
   },
   "st-engines": {
     "repo": "swipl-devel",
