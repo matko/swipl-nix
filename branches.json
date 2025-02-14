@@ -91,8 +91,8 @@
   },
   "trace-yield-state": {
     "repo": "swipl-devel",
-    "rev": "3865095666748259e0712bceb99ab2fc2df0f34e",
+    "rev": "2d5115c5040199483fcbb13d7b5bfd12dbdc27c7",
     "version": "9.3.20",
-    "hash": "sha256-jc4WHFwqAoTfRkrtVDNk3CF9b5E6aJoBz2JJFC26cpU="
+    "hash": "sha256-wLSHfTb2DoRKcXieA7TdGAOYoxojYehyz2UdYTSlgdo="
   }
 }
