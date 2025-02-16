@@ -94,5 +94,11 @@
     "rev": "2d5115c5040199483fcbb13d7b5bfd12dbdc27c7",
     "version": "9.3.20",
     "hash": "sha256-wLSHfTb2DoRKcXieA7TdGAOYoxojYehyz2UdYTSlgdo="
+  },
+  "yield-exception": {
+    "repo": "swipl-devel",
+    "rev": "68a3b1d6abb157be1715d752a3e47c16282f49f0",
+    "version": "9.3.20",
+    "hash": "sha256-9Xd7krj3GclB4KyGi8SSuuwyg6SoC+2JI2AKb3w6ZTo="
   }
 }
