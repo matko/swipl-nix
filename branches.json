@@ -23,12 +23,6 @@
     "version": "8.5.10",
     "hash": "sha256-JzgeNx5NHAmsl0rYwwZl6aBUvFlicm0/MlaoHmRPHVY="
   },
-  "emacs-support": {
-    "repo": "swipl-devel",
-    "rev": "62ef49573093672a45a5697adeaa5bbd86df3d77",
-    "version": "8.5.18",
-    "hash": "sha256-uoCmzVkXxx3KS4NZ6kvpo9y/VUmyGmLieGR+TAchCIo="
-  },
   "index": {
     "repo": "swipl-devel",
     "rev": "94adedd027ddecd9761127cd56d66f1b140d6359",
