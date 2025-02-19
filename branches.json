@@ -53,12 +53,6 @@
     "version": "9.1.6",
     "hash": "sha256-UzfjEStakUVUkYg/Dz74fXslNuup7rDAieMoR8y1DsI="
   },
-  "rename-elisp-package-sweep-to-sweeprolog": {
-    "repo": "swipl-devel",
-    "rev": "7167967475f8445bc8e3f8a5652c6dc78804c9fb",
-    "version": "8.5.17",
-    "hash": "sha256-bWss6XerXEfWFu8PrXqfVr9BYtUsqgpdxJSX0lzEr/g="
-  },
   "scratch/align-with-spaces": {
     "repo": "swipl-devel",
     "rev": "5a9c4b8eb3cb74fc716d182f497810568fefaf0c",
@@ -77,12 +71,6 @@
     "version": "9.3.20",
     "hash": "sha256-fd0jieLi3Fid/vHnjMvWuhRxxUK3UNREbxR4CE2wl94="
   },
-  "st-engines": {
-    "repo": "swipl-devel",
-    "rev": "88a906bc9ac2c28658f53d1b0c8aa2d7720880b6",
-    "version": "9.3.19",
-    "hash": "sha256-kCmDAsqJRiQeD62JLesogI5zOkbpsXXUYZ6WNLt6+EM="
-  },
   "strptime": {
     "repo": "swipl-devel",
     "rev": "db1404140d84dcc2e89d8908822241c7bed5d627",
@@ -94,11 +82,5 @@
     "rev": "1528c18976cb669bd4aad2bd65bed57f1bbca3c3",
     "version": "9.3.20",
     "hash": "sha256-78ZHyu0SNJVtoQMGxAQ3kcrG91jWtk3RsACC7YJe7WY="
-  },
-  "yield-exception": {
-    "repo": "swipl-devel",
-    "rev": "68a3b1d6abb157be1715d752a3e47c16282f49f0",
-    "version": "9.3.20",
-    "hash": "sha256-9Xd7krj3GclB4KyGi8SSuuwyg6SoC+2JI2AKb3w6ZTo="
   }
 }
