@@ -65,6 +65,12 @@
     "version": "9.3.20",
     "hash": "sha256-fd0jieLi3Fid/vHnjMvWuhRxxUK3UNREbxR4CE2wl94="
   },
+  "static-dicts": {
+    "repo": "swipl-devel",
+    "rev": "1c9d86089e2714c508a9e5b12be13b3a53956d73",
+    "version": "9.3.21",
+    "hash": "sha256-bZV/ZOHeWOIcAD/4U1iA+2IagzQSN+7S4lRxsJS8Fmk="
+  },
   "strptime": {
     "repo": "swipl-devel",
     "rev": "db1404140d84dcc2e89d8908822241c7bed5d627",
