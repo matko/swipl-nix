@@ -19,9 +19,9 @@
   },
   "argnames": {
     "repo": "swipl-devel",
-    "rev": "1d6b7eff96eed40cbd62df9c3d7a862d49cf3f43",
+    "rev": "c41b15846f218db33d29374be9aacdc0de690897",
     "version": "9.3.22",
-    "hash": "sha256-F9Dd3//FKDZo4iIrYxOa1R5etpFeZy64i3V8Wm0miMQ="
+    "hash": "sha256-UsAbWtg6y8lpj/KqjB4FgF3ydWBvAq6DpUHg6nSabQQ="
   },
   "conan-profiles": {
     "repo": "swipl-devel",
