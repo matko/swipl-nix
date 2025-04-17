@@ -91,8 +91,8 @@
   },
   "trie-attvar": {
     "repo": "swipl-devel",
-    "rev": "8aa46127737c9578b67c7b020f2d72725f36ae72",
+    "rev": "881161a5a350b936908bfbae54b8c7e36a588109",
     "version": "9.3.22",
-    "hash": "sha256-zaOX5oUicK6ZvKPaaoVmH5cR00xlBIoy8gUYyEd6j+o="
+    "hash": "sha256-PrKuVSIQ6JisPK1UfLOr/fAAozCG3KsaQ+JZKGA35eY="
   }
 }
