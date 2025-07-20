@@ -67,9 +67,9 @@
   },
   "sdl": {
     "repo": "swipl-devel",
-    "rev": "c65ffc5e66991f2377cf96ff927773c90ee977af",
+    "rev": "62ed244f5895d8f39d0aca307b5d9a861af05d84",
     "version": "9.3.25",
-    "hash": "sha256-MeMmH+y7f0Y3KiIMulN1GKqVvuNHovKGKE441SpLn58="
+    "hash": "sha256-5Okn+0vDMpUr1X8JGq/bD7DwS/XLF3KobggtwAnW+rI="
   },
   "sdl-windows": {
     "repo": "swipl-devel",
