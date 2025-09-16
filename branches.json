@@ -109,8 +109,8 @@
   },
   "win-tty": {
     "repo": "swipl-devel",
-    "rev": "d07a30b15ca760c9b645292fac06e9ba14cd7795",
+    "rev": "59dc9ed64b70872032323d028c7170c960165136",
     "version": "9.3.30",
-    "hash": "sha256-yEocqSrdhMdRPH90+qEo7Po+VqVlqWdmkEUsq6MN3eo="
+    "hash": "sha256-74sdy7Fwb5ESgh/97vPdO66axGxFPMXGFQH/HoU1sV8="
   }
 }
