@@ -43,9 +43,9 @@
   },
   "master": {
     "repo": "swipl-devel",
-    "rev": "30ee06a5ae77a2a3203c4265d4d58a1402dae835",
+    "rev": "87368273818969380662c8aeb7669f08c07a599d",
     "version": "9.3.35",
-    "hash": "sha256-4k2JDuYVLvYLKTqGuNuXzZz3cyWHNeo3LG/cWnVfpOE="
+    "hash": "sha256-33UCVJeU3/cZrZrUa6vOvEEktWa3n9SWHvbxtjf69D0="
   },
   "quoted-char-escapes": {
     "repo": "swipl-devel",
