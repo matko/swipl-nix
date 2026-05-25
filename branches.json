@@ -43,9 +43,9 @@
   },
   "macos-pkg-split-layout": {
     "repo": "swipl-devel",
-    "rev": "9d55c34087f93dcb8b6fad7f5321b87e449bff9b",
+    "rev": "66ba6255d4441145cee35a300b5c3664425e1a76",
     "version": "10.1.7",
-    "hash": "sha256-yAP5esK71JaI6v6CUZGHjaFX4WVrnujrSoXhHEeC3Nk="
+    "hash": "sha256-kcUcEGfejahkcoxNgJ95ettYK/UkIzRiIs7YQKZp+vU="
   },
   "master": {
     "repo": "swipl-devel",
