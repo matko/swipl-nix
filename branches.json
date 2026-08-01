@@ -13,9 +13,9 @@
   },
   "agc-blob-margin": {
     "repo": "swipl-devel",
-    "rev": "5e629d270bbfb8dc6004bacbbee15bf45b74bb78",
+    "rev": "24f492e0169d0e4e85e8cd91aa352b809edcf9c2",
     "version": "10.1.12",
-    "hash": "sha256-6UbCgLBLenOyoiF58VMfhcq9G+VHXEiVFpiKtatTJ+A="
+    "hash": "sha256-JoxK+gltcGTlBvfdOFmVS0690uxCF97Xzw1zYZ2COJo="
   },
   "applink": {
     "repo": "swipl-devel",
