@@ -55,9 +55,9 @@
   },
   "master": {
     "repo": "swipl-devel",
-    "rev": "9f804dee22b48bc6ad92f97d6c0fb675a1f0391b",
+    "rev": "748bdf118006e324f54fe362eece2b173e0b7668",
     "version": "10.1.14",
-    "hash": "sha256-a9JmOlS7kAe1M1f4ZDf98gcm4jniv709sMK33mYkb0s="
+    "hash": "sha256-M4jRuYa0wIOaV5RW6n7sZF1KUjRwoNqWIMZPEi7Rx2Q="
   },
   "quoted-char-escapes": {
     "repo": "swipl-devel",
@@ -91,9 +91,9 @@
   },
   "signpath-test": {
     "repo": "swipl-devel",
-    "rev": "cf8e6ec0e17331ea09286394e0f7de9223d119bb",
+    "rev": "723b66c464846fb24488a2d61bb79f41dcd93a7e",
     "version": "10.1.14",
-    "hash": "sha256-hs0/3/foD9eMlOtVxJbd5+Ya76C3AvV+FPfP6A/vOYw="
+    "hash": "sha256-Kt/6su/3ZOod6cpgLI4VSsz/Niu1mY6IGI7X3qnzeJ0="
   },
   "simplify-backtrack": {
     "repo": "swipl-devel",
