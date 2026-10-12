@@ -91,9 +91,9 @@
   },
   "signpath-test": {
     "repo": "swipl-devel",
-    "rev": "25ddba28bc4da739ff5ba0dd8e88f30135da0eb9",
-    "version": "10.1.17",
-    "hash": "sha256-u0pd15BduJjXYzzWJUyU8bXsiNj+9BJMPPWlaEWjC70="
+    "rev": "4337fc12b12254754393cf844e2fe6823af4e246",
+    "version": "10.1.18",
+    "hash": "sha256-uhwJr+Nmvq53UIMsseTesWReSEf/zHk+pLIyY6RlVkc="
   },
   "simplify-backtrack": {
     "repo": "swipl-devel",
