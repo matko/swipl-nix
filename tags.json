@@ -736,5 +736,11 @@
     "rev": "724df2b54cf1dda6fb3327d9167db2ae750c460e",
     "version": "10.1.19",
     "hash": "sha256-ngiyG61P9WxJfNF+CWIfG+pVTHOlXpOJV9zrlmGzYIY="
+  },
+  "10.1.20": {
+    "repo": "swipl-devel",
+    "rev": "807a2eeaac787822c96b5b63385bb9e9441d0e5f",
+    "version": "10.1.20",
+    "hash": "sha256-2rykYmu+pRg3D6owCbvALotWhKy4gb3YYAiaHB9ECcU="
   }
 }
