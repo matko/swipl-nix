@@ -137,6 +137,12 @@
     "version": "11.0.0",
     "hash": "sha256-tkTiPhoG8vab183b7VeSBoPZmdKlgiuNxF2cE2W49gE="
   },
+  "11.0.1": {
+    "repo": "swipl",
+    "rev": "13851d1486f539a8b271958d3ce4432e2b972730",
+    "version": "11.0.1",
+    "hash": "sha256-uFZReLO+OBHx2GRN0o626MtQDFYuTaOsRlADhLu24OI="
+  },
   "8.5.0": {
     "repo": "swipl-devel",
     "rev": "b1a7342b0d68911a1cbe5eb0523651570681127c",
